@@ -30,5 +30,5 @@ public class HelloWorldController {
 		Map<String, Object> map = new HashMap<>();
 		map.put("result: ", "json value");
 		return map;
-	}
+	} 
 }
