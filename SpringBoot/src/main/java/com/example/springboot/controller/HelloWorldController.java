@@ -26,9 +26,12 @@ public class HelloWorldController {
 	}
 	
 	@RequestMapping(value="/json", produces=MediaType.APPLICATION_JSON_VALUE)
-	public Map<String, Object> json(){
+	public Map<String, Object> json(String arg1, String arg2){
 		Map<String, Object> map = new HashMap<>();
+		
 		map.put("result: ", "json value");
+		map.put("arg1: ", arg1);
+		map.put("arg2: ", arg2);
 		return map;
 	} 
 }
