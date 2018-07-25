@@ -33,7 +33,6 @@ public class RestApiController {
 		users.put(id, name);
 		
 		return new ResponseEntity<>("Updated", HttpStatus.OK);
-		
 	}
 	
 }
