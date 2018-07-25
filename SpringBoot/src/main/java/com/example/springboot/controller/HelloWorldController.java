@@ -16,8 +16,8 @@ public class HelloWorldController {
 	}
 	
 	@RequestMapping("/sayMe")
-	public String sayMe(String arg){
-		return "hello " + arg;
+	public String sayMe(String name){
+		return "hello " + name;
 	}
 	
 	@RequestMapping("/add")
@@ -34,4 +34,5 @@ public class HelloWorldController {
 		map.put("arg2: ", arg2);
 		return map;
 	} 
+
 }
